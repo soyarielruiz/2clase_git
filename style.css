@@ -3,4 +3,9 @@ body .a{
 	font: 100;
 	top: 10px;
 	background-size: 500px;
+
+}
+
+h1{
+	font: bold;
 }
