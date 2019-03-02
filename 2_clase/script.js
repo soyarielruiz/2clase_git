@@ -31,7 +31,6 @@ function ctx(a,b) {
 
 new ctx(1,2)
 
-
 /*
 	Function.call
 	Function.apply
