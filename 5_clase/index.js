@@ -31,3 +31,27 @@ imagen.then(data=>
 .catch(error=>console.error(error))*/
 
 // Async/Await
+/*async function obtenerComentarios() {
+	//fetch().then().catch()
+	let usuarios_response = await fetch(`${url}users`)
+	let usuarios = await usuarios_response.json()
+	let posts  = await fetch(`${url}posts?userId=${usuarios[7].id}`)
+	let posts_user	= await posts.json()
+
+	UNA FORMA!!!
+	let results	= await Promise.all(posts_user.map( async post => {
+		let fetch_comment = await fetch(`${url}comments?postId=${post.id}`)
+		let comment = await fetch_comment.json()
+		return comment
+		})
+	)
+
+	let results	= await Promise.all(posts_user.map( async post => await fetch(`${url}comments?postId=${post.id}`)))
+	let comentarios = await Promise.all(results.map(async response => await response.json()))
+
+	console.log(comentarios)
+}
+
+// se puede aplicar el try-catch aca
+obtenerComentarios()*/
+
