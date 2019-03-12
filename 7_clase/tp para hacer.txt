@@ -1,1 +1,8 @@
 chat con soprte para API REST 
+2 procesos corriendo
+1 web socket
+1 http, para un mini formulario
+que pueda hacer una transmision de mandar y recibir mensajes
+
+form puede manejar registro de usuario
+y desde el chat se puede hacer el CRUD a la API
