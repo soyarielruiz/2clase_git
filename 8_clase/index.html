@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js">
+		let socket = io("ws://localhost:9000")
+
+		socket.on("enviar mensaje", data => {
+			console.log(data.msj)
+		})
+
+		socket.emit("recibir mensaje", {msj : "es lo que agarre del formulario"})
+
+	</script>
+</body>
+</html>
