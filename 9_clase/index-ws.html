@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js">
+</script>
+<script type="text/javascript">
+	let socket = io("http://localhost:8000")
+	socket.on("nueva_con", data => {
+		console.log(data)
+	})
+
+	socket.on("broadcast", data => {
+		console.log(data)
+	})
+
+	// puedo usar el disconectt
+	// before.onload
+</script>
+</body>
+</html>
